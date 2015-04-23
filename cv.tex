@@ -1,0 +1,197 @@
+%!TEX TS-program = xelatex
+\documentclass[4pt, print]{friggeri-cv}
+%\usepackage{showframe}
+%\addbibresource{bibliography.bib}
+
+\begin{document}
+\header{Tom}{Nickson}{{\thinboldfont Machine}\thinfont Learning{\thinboldfont DPhil}\thinfont Student}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Contact}
+    40 Pinnocks Way
+    Oxford, OX29DG
+    United Kingdom
+    ~
+    +447885384816
+    \href{mailto:tom@osculate.it}{tom@osculate.it}
+  \section{Programming}
+  \subsection{Strong}
+  Python, Matlab, 
+  Scientific C++
+  \subsection{Familiar}
+  Application C++,
+  JavaScript, Julia,
+  Objective-C, Swift,
+  Java, C, SQL, CUDA
+  \section{Computer Skills}
+  OSX, Linux,  Git,
+ Postgres, Windows,
+  Office, \LaTeX,
+  Emscripten
+  \section{Specialties}
+  Bayesian Optimisation,
+  Gaussian Processes,
+  Efficient Numerics
+\end{aside}
+
+%\section{interests}
+
+%complex networks, social networks, community detection, community structure,
+%overlapping communities, information diffusion, viral marketing, social
+
+
+
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {2014}
+    {Google Impact Challenge Winner}
+    {University of Oxford with Kew Gardens}
+    {In partnership with Kew Gardens, the Machine Learning Research Group (MLRG) of the University of Oxford applied for a Google Impact Grant to track the distribution of species of mosquitos. Our group's responsibility is signal processing and inference, with the aim of inferring the species of a mosquito from its sound. I performed the initial investigation of this premise and helped to write both the proposal and the work plan.}
+  \entry
+    {Since 2012}
+    {Director and Developer}
+    {Animal health spinout from the University of Oxford}
+    {I ported our science platform to Android smartphones and visit our partners both in the UK and internationally. Along with the other directors, I am responsible for the future direction of the company.}
+
+\end{entrylist}
+
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {Since 2012}
+    {DPhil {\normalfont candidate in Machine Learning}}
+    {MLRG, University of Oxford}
+    {Funded by the \href{http://www.orchid.ac.uk/}{ORCHID Project}. I am working on machine learning on low power devices and in javascript, efficient Bayesian optimisation and methods to present uncertain data to humans. The majority of my work involves using Gaussian processes to express uncertainty over the state of the world and coming up with an optimal action given this uncertainty. My platform for this is the Jetson TK1, a low power CUDA board. I expect to finish around \boldfont\addfontfeature{Color=gray} September 2016.}
+  \entry
+    {2008–2012}
+    {MEng, {\normalfont First Class Honours}}
+    {University of Oxford}
+    {Specialised in Information and Electronic Engineering. I did my fourth   year project on eye tracking using electrooculography.}
+
+ 
+\end{entrylist}
+
+\section{Publications}
+\begin{entrylist}
+   \entry
+{November 2014}
+{Workshop Paper \& Poster}
+{Bayesian Optimisation Workshop at NIPS2014}
+{First author on `{\boldfont\addfontfeature{Color=gray} Automated Machine Learning using Stochastic Algorithm Tuning ({\thinboldfont\addfontfeature{Color=gray} stoat})}'. Presented a poster at the workshop. The manuscript is currently being update and expanded for submission to a full conference later this year.}
+\end{entrylist}
+\section{Tech Community}
+\begin{entrylist}
+   \entry
+{January 2015}
+{Talk: From C++ to JavaScript with Emscripten}
+{JSOxford}
+{In this talk, I explained the benefits of combining C++ (debuggers, libraries, optimising compilers) with JS (run anywhere with reasonable performance).}
+   \threeentry
+{November 2014}
+{Mesh Networking Tech Mentor}
+{Emerging Tech Weekender, Oxford}
+\end{entrylist}
+
+
+
+\pagebreak
+\newgeometry{left=2.1cm}
+%%%%%%%%%%%%%%%%%%%%
+% List environment %
+%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\renewcommand{\entry}[4]{%
+  \parbox[t]{2.4cm}{\hfill#1}&
+  \parbox[t]{13.5cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{0.5\parsep}%
+  }\\}
+\renewcommand{\threeentry}[3]{%
+  \parbox[t]{2.4cm}{\hfill#1}&
+  \parbox[t]{13.5cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}%
+    \vspace{0.5\parsep}%
+  }\\}
+\renewcommand{\shortentry}[2]{%
+  \parbox[t]{2.4cm}{\hfill#1}&
+  \parbox[t]{13.5cm}{%
+    #2%
+  }\\}
+\section{Other Experience}
+\begin{entrylist}
+    \entry
+{November 2014}{Signal Processing TA}{AIMS CDT, University of Oxford}
+{I assisted development of the coursework. During the week long lab session I helped and directed the students. My section of the course concentrated on the application of Kalman filters to streaming inference, beginning with the standard object tracking activity and continuing to estimating the coefficients of an autoregressive model.}
+\threeentry
+{March 2014}
+{C++ Demonstrator}
+{Department of Engineering, University of Oxford}
+\threeentry
+{2012-2013}
+{Electronics Demonstrator}
+{Department of Engineering, University of Oxford}
+\threeentry
+{November 2012}
+{Matlab Demonstrator}
+{Department of Engineering, University of Oxford}
+  \entry
+    {2011}
+    {President of Balliol Summer Event Committee}
+    {Balliol College}
+    {We ran a successful event including bands, comedy acts and a large bouncy slide. We
+     recouped losses from a previous failed event and generated significant goodwill with the College.}
+  \entry
+  {2010-2011}
+    {Editor of Scrawl}
+    {Balliol College}
+    {Scrawl is the termly Balliol arts magazine. We promoted art in Balliol with an art wall and a giant cardboard robot. I contributed illustrations and poems to the magazine, and motivated talented artists to submit their work.}
+\end{entrylist}
+
+
+\section{Other Employment}
+\begin{entrylist}
+  \entry
+    {2009-2010}
+    { Mr. Design\&Maintenance}
+    {Balliol JCR Committee}
+    {I was responsible for the general upkeep of the JCR's property and furnishings. Amongst other activities, I repaired large amounts of our bar furnishings and designed and built a secure case for a games console to stop theft while ensuring the console was properly cooled and accessible for members.}
+  \threeentry
+    {Summer 2011}
+    { Wrote GUI to control micro-controller test harness.}
+    {Triteq, Hungerford}
+  \threeentry
+    {Summer 2010}
+    { Wrote custom network testing kit for medical device.}
+    {Triteq, Hungerford}
+  \threeentry
+    {Summer 2009}
+    { Developed webapp to monitor power plant status in Vodafone's MTXs.}
+    {Vodafone, Newbury}
+  \threeentry
+    {Summer 2009}
+    { Tested a bandgap reference chip using an FPGA test platform.}
+    {Maxim IC, Newbury}
+  \threeentry
+    {2005-2008}
+    { Computer Repairman and Web Developer}
+    {Cavic Computers,  Newbury}
+ \end{entrylist}
+ 
+ \section{Other Education}
+\begin{entrylist}
+ \threeentry
+    {2006-2008}
+    {Sixth Form, 3As at A-Level, 4As at AS-Level}
+    {St. Bartholomew's School, Newbury}
+ \end{entrylist}
+
+
+\end{document}
